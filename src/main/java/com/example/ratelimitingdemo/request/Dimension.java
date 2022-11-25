@@ -1,4 +1,4 @@
-package com.example.ratelimitingdemo;
+package com.example.ratelimitingdemo.request;
 
 import lombok.Getter;
 import lombok.Setter;

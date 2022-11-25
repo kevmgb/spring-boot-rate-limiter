@@ -1,4 +1,4 @@
-package com.example.ratelimitingdemo;
+package com.example.ratelimitingdemo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,5 +11,5 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Perimeter {
     private String shape;
-    private Double perimeter;
+    private Double perimeterLength;
 }
