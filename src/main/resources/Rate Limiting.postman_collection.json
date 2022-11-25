@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "e9731aa0-4006-4ea8-9a7b-86f2b2512c37",
+		"name": "Rate Limiting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Rectangle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Forwarded-For",
+						"value": "12345",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"length\": 10,\n    \"breadth\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/perimeter/rectangle",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"perimeter",
+						"rectangle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
