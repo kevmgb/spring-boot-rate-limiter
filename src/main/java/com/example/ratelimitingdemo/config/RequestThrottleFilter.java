@@ -20,7 +20,7 @@ public class RequestThrottleFilter implements Filter {
     public RequestThrottleFilter(){
         super();
         requestCountsPerIpAddress = Caffeine.newBuilder().
-                expireAfterWrite(1, TimeUnit.SECONDS).build(key -> 0);
+                expireAfterWrite(1, TimeUnit.MINUTES).build(key -> 0);
     }
 
     @Override
